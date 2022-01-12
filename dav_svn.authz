@@ -5,10 +5,10 @@ priv = nitisak
  
 [/]
 @admin = rw
-* = r
 
 [source:/]
 @admin = rw
+@developers = rw
 
 [nitisak:/]
 @admin = rw
