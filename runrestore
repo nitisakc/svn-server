@@ -1,0 +1,14 @@
+#!/bin/sh
+
+if [ "$#" != 1 ]
+then
+    echo "Usage: runrestore :reponame :dumpfile"
+    exit 1
+fi
+
+REPO_NAME=$1
+DUMP_FILE=$2
+
+# read -p "Do you really want to restore /opt/backup/$DUMP_FILE to /opt/svn/$REPO_NAME? [yes/no] " result
+svnadmin load /opt/svn/$REPO_NAME < /opt/backup/$DUMP_FILE
+
