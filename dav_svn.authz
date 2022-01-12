@@ -1,7 +1,7 @@
 [groups]
 admin = svnadm
-developers = nitisak,paitoon,wicha
-ownuser = nitisak
+developers = nitisak,paitoon,youngyot
+priv = nitisak
  
 [/]
 @admin = rw
@@ -9,4 +9,8 @@ ownuser = nitisak
 
 [source:/]
 @admin = rw
-@developers = rw
+
+[nitisak:/]
+@admin = rw
+@developers = r
+@priv = rw

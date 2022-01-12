@@ -1,0 +1,13 @@
+#!/bin/sh
+
+if [ "$#" != 2 ]
+then
+    echo "Usage: adduser :username :password"
+    exit 1
+fi
+
+USERNAME=$1
+PASSWORD=$2
+
+htpasswd -b -c /etc/apache2/dav_svn.passwd $USERNAME $PASSWORD
+echo "add user: $USERNAME"

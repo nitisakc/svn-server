@@ -1,0 +1,7 @@
+#!/bin/sh
+
+mkdir -p /opt/conf/backup
+cp /etc/apache2/dav_svn.authz /opt/conf/backup/dav_svn_$(date "+%Y-%m-%d---%H-%M-%S").authz
+cp /opt/conf/ /etc/apache2
+
+/etc/init.d/apache2 reload

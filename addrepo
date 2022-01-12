@@ -1,0 +1,15 @@
+#!/bin/sh
+
+if [ "$#" != 1 ]
+then
+    echo "Usage: addrepo :name"
+    exit 1
+fi
+
+REPO_NAME=$1
+
+svnadmin create /opt/svn/$REPO_NAME
+chown -R www-data:www-data /opt/svn/$REPO_NAME
+chmod -R 775 /opt/svn/$REPO_NAME
+
+echo "add repo: $REPO_NAME"
