@@ -2,4 +2,6 @@
 
 mkdir -p /opt/conf/backup
 cp /etc/apache2/dav_svn.authz /opt/conf/backup/dav_svn_$(date "+%Y-%m-%d---%H-%M-%S").authz
-cp /opt/conf/ /etc/apache2
+cp /opt/conf/dav_svn.authz /etc/apache2
+cp /opt/conf/runbackup /usr/local/bin
+chmod +x /usr/local/bin/runbackup

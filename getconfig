@@ -1,3 +1,4 @@
 #!/bin/sh
 
 cp /etc/apache2/dav_svn.authz /opt/conf
+cp /usr/local/bin/runbackup /opt/conf

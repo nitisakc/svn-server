@@ -1,0 +1,3 @@
+#!/bin/sh
+
+#svnadmin dump /opt/svn/source > /opt/backup/source.dump
