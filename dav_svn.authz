@@ -1,0 +1,12 @@
+[groups]
+admin = svnadm
+developers = nitisak,paitoon,wicha
+ownuser = nitisak
+ 
+[/]
+@admin = rw
+* = r
+
+[source:/]
+@admin = rw
+@developers = rw
