@@ -20,9 +20,9 @@ RUN apt-get update && \
 
 COPY dav_svn.conf /etc/apache2/sites-enabled/
 COPY dav_svn.authz /etc/apache2/
-COPY addrepo adduser getconfig reconfig runbackup /usr/local/bin/
+COPY addrepo adduser getconfig reconfig runbackup runrestore /usr/local/bin/
 
-RUN chmod +x /usr/local/bin/addrepo /usr/local/bin/adduser /usr/local/bin/getconfig /usr/local/bin/reconfig /usr/local/bin/runbackup
+RUN chmod +x /usr/local/bin/addrepo /usr/local/bin/adduser /usr/local/bin/getconfig /usr/local/bin/reconfig /usr/local/bin/runbackup /usr/local/bin/runrestore
 
 EXPOSE 80
 
